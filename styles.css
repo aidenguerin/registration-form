@@ -1,6 +1,6 @@
 @font-face {
-    font-family: norse;
-    src: url(fonts/Norse-Bold.otf);
+    font-family: sidebar;
+    src: url(fonts/BebasNeue-Regular.ttf);
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 #sidebar {
     background-color: green;
-    background-image: url(images/background.avif);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
@@ -32,11 +32,13 @@ body {
 
 #sidebar-logo {
     width: auto;
-    height: 80px;
+    height: 100px;
+    margin: 0px 20px;
+    fill: #fff;
 }
 
 #sidebar-text {
-    font-family: norse, sans-serif;
+    font-family: sidebar, sans-serif;
     font-size: 5rem;
     line-height: 1;
 }
@@ -46,7 +48,7 @@ body {
 }
 
 #content {
-    background-color: rgb(249, 250, 251);
+    background-color: rgb(246, 251, 255);
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -108,13 +110,13 @@ input {
 }
 
 a {
-    color: #596D48;
+    color: #3a6383;
     font-weight: bold;
     text-decoration: inherit;
 }
 
 button {
-    background-color: #596D48;
+    background-color: #3a6383;
     border-radius: 10px;
     border-style: none;
     width: 250px;
