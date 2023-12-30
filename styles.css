@@ -1,0 +1,139 @@
+@font-face {
+    font-family: norse;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    margin: 0px;
+}
+
+#sidebar {
+    background-color: green;
+    background-image: url(images/background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100vh;
+    display:inline;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar-logo {
+    width: auto;
+    height: 80px;
+}
+
+#sidebar-text {
+    font-family: norse, sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+#sidebar-footer {
+    justify-self: end;
+}
+
+#content {
+    background-color: rgb(249, 250, 251);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-header {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 15vh;
+    padding: 40px 20vw 40px 60px;
+}
+
+#form-header>p {
+    margin: 0;
+}
+
+#form-header>p:last-child {
+    margin-top: 30px;
+}
+
+#form-container {
+    background-color: #fff;
+    padding: 40px 20vw 40px 60px;
+    box-shadow: lightgrey 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-container>p {
+    font-size: 1.5rem;
+}
+
+#form-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+input {
+    border: 2px solid#E5E7EB;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#form-footer {
+    padding: 60px;
+    font-size: 1rem;
+}
+
+a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: inherit;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 10px;
+    border-style: none;
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: lightgrey 5px 5px 5px;;
+}
+
+#message {
+    color: rgb(214, 84, 84);
+    margin: -20px 0px;
+}
+
+.valid {
+    border: 2px solid rgb(214, 84, 84);
+}
+
+.invalid {
+    border: 2px solid rgb(214, 84, 84);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="sidebar-box">
+            <img id="sidebar-logo" src="images/odin-lined.png" alt="odin-logo">
+            <span id="sidebar-text">ODIN</span>
+        </div>
+    </div>
+    <div id="content">
+        <form method="post" id="registration">
+            <div id="form-header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div id="form-container">
+                <p>Let's do this!</p>
+                <div id="form-body">
+                    <div class="form-col">
+                        <label for="first-name">FIRST NAME</label><input type="text" name="first-name" id="first-name" >
+                        <label for="email"></label>EMAIL<input type="email" name="email" id="email">
+                        <label for="password"></label>PASSWORD<input class="password" type="password" onchange="check()" name="password" id="password">
+                        <p id='message'></p>
+                    </div>
+                    <div class="form-col">
+                        <label for="last-name">LAST NAME</label><input type="text" name="last-name" id="last-name">
+                        <label for="phone"></label>PHONE NUMBER<input type="text" name="phone" id="phone">
+                        <label for="confirm-password"></label>CONFIRM PASSWORD<input class="password" type="password" onchange="check()" name="confirm-password" id="confirm-password">
+                    </div>
+                </div>
+                
+            </div>
+            <div id="form-footer">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+<script>
+    const passwords = document.querySelectorAll(".password");
+    
+    function check() {
+    if(document.querySelector('#password').value ===
+            document.querySelector('#confirm-password').value) {
+                document.querySelector('#message').innerHTML = "";
+                
+    } else {
+        document.querySelector('#message').innerHTML = "passwords do not match";
+    }
+}
+</script>
+</body>
+</html>
